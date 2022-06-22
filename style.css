@@ -1,0 +1,333 @@
+body {
+    font-family: 'TT Lakes';
+    margin: 0;
+    background-color: #F8F8F8;
+    box-sizing: border-box;
+}
+*,*::after,*::before {
+    box-sizing: inherit;
+}
+@font-face {
+    font-family: 'TT Lakes';
+    src: url(fonts/TTLakes-Regular.ttf);
+}
+
+/* Адаптив */
+@media (min-width:1120px){
+    .container{
+        width: auto;
+    }
+    header{
+        visibility: hidden;
+        margin-top: 18px;
+    }
+    .container__button3{
+        visibility: visible;
+    }
+    .container__button4{
+        visibility: visible;
+        margin-left: 160px;    
+    }
+    .container__button3::before{
+        content: "Оставить заявку";
+        display: inline-block;
+        width: 125px;
+        height: 24px;
+        margin-top: 10px;
+        margin-left: -135px;
+
+        text-decoration: none;
+        font-size: 16px;
+        color: black;
+        font-weight: bold;
+    }
+    .container__button4::before{
+        content: "Статус ремонта";
+        display: inline-block;
+        width: 125px;
+        height: 24px;
+        margin-top: 10px;
+        margin-left: -135px;
+
+        text-decoration: none;
+        font-size: 16px;
+        color: black;
+        font-weight: bold;
+    }
+    main{
+        margin: -84px 32px 32px 32px;
+    }
+    .container3{
+        width: 490px;
+        margin: 0 32px 32px 32px;
+    }
+    .container4{
+        width: 500px;
+        margin: 16px 32px 32px 32px;
+    }
+    .image{
+        border-radius: 6px;
+    }
+}
+
+@media (max-width:1119px){
+    .container{
+        width: auto;
+    }
+    main{
+        margin: 0 24px 16px 24px;
+    }
+    .container3{
+        width: 312px;
+        margin: 0 24px 24px 24px;
+    }
+    .container4{
+        width: 360px;
+        margin: 16px 24px 24px 24px;
+    }
+    .image{
+        border-radius: 6px;
+    }
+}
+
+@media (max-width:767px){
+    .container{
+        width: auto;
+    }   
+    .container__button5{
+        visibility: hidden;
+        position: absolute;
+    }
+    .container__button6{
+        visibility: hidden;
+        position: absolute;
+    }
+    .container__button7{
+        visibility: hidden;
+        position: absolute;
+    } 
+    .container__divider{
+        visibility: hidden;
+        position: absolute;
+    }
+    .container__button1{
+        margin-right: 16px;
+    }
+    main{
+        margin: 16px;
+    }
+    .container3{
+        margin: 0 16px 0 16px;
+        width: 288px;
+    }
+    .container4{
+        width: 320px;
+        margin: 16px 0 0 0;
+    }
+    .image{
+        border-radius: 0px;
+    }
+}
+
+@media (max-width: 319px){
+    .container{
+        max-width: none;
+    }
+}
+
+/* Шапка */
+header {
+    min-height: 88px;
+    min-width: 320px;
+    width: auto;
+    
+    background-color: #ffffff;
+    box-shadow: 0 0 0 1px #D9FFF5;
+}
+
+.container {
+    display: flex;  
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.container__menu {
+    display: flex;
+    margin-right: auto;
+    width: auto;
+    justify-content: flex-start;
+}
+.container__menu2 {
+    display: flex;
+    margin-left: auto;
+    width: auto;
+    justify-content: flex-end;
+}
+
+.container__button1 {
+    width: 40px;
+    height: 40px;
+    margin-top: 24px;
+    margin-left: 16px;
+    background-image: url(images/burger.png);
+}
+.container__button2 {
+    margin-top: 18px;
+    margin-right: 16px;
+    width: 97px;
+    height: 52px;
+    background-image: url(images/Group.png);
+}
+/*.container__button3::before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 32px;
+    
+    position: relative;
+    top: 4px;
+    right: 20px;
+
+    background-color: #eaeaea;
+}*/
+.container__divider {
+    width: 2px;
+    height: 32px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 28px;
+}
+.container__divider2 {
+    width: 2px;
+    height: 32px;
+    margin-right: 20px;
+    margin-top: 28px;
+}
+.container__button3 {
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+    margin-top: 24px;
+    background-image: url(images/repair.png);
+}
+.container__button4 {
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+    margin-top: 24px;
+    background-image: url(images/checkstatus.png);
+}
+.container__button5 {
+    width: 40px;
+    height: 40px;
+    margin-top: 24px;
+    margin-right: 20px;
+    background-image: url(images/profile.png);
+}
+.container__button6 {
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+    margin-top: 24px;
+    background-image: url(images/chat.png);
+}
+.container__button7 {
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+    margin-top: 24px;
+    background-image: url(images/call.png);
+}
+
+
+
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+}
+h1::before {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 40px;
+    position: absolute;
+    left: -4px;
+    border-radius: 4px;
+
+    background-color: #41F6D7;
+}
+
+/* Меню */
+.container2 {
+    display: flex; 
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+}
+.container2__nav-block {
+    width: max-content;
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow: visible;
+}
+.container2__button {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 8px;
+    border: 2px solid transparent;
+    color: #7E7E82;
+    width: auto;
+    height: 40px;
+    margin-right: 6px;
+}
+.container2__button:focus {
+    width: auto;
+    height: 40px;
+    padding: 8px;
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+    background-color: #ffffff;
+}
+
+/* Кнопка "Читать далее"*/
+.container3__button-more {
+    width: 130px;
+    font-size: 16px;
+    margin-left: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+.container3__button-more::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 10px;
+    background: url(images/icon.png) no-repeat;
+    margin-right: 16px;
+}
+
+/* Тектс и картинка*/
+.container-inf {
+    max-width: 1120px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+p {
+    font-size: 14px;
+}
+.container3 {
+    min-width: 288px;
+}
+
+.container4 {
+    min-width: 320px;
+}
+
+.image {
+    width: 100%;
+}
